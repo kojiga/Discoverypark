@@ -1,0 +1,10 @@
+<div class="content">
+  <p>Opening Hours: {{ myVariable }}</p>
+
+  <div class="input-field">
+    <label>Enter Time</label>
+    <input type="text" [(ngModel)]="newvariable" placeholder="Enter time 08:00 A.M."/>
+
+    <button (click)="updateVariable()">Update Variable</button>
+  </div>
+</div>
