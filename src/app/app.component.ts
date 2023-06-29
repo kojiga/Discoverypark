@@ -12,7 +12,7 @@ import { OfferserviceService } from './Services/offerservice.service';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent  implements OnInit{
-  myVariable: string = '09.00 A.M.';
+  myVariable: string = '09.00 A.M-5.00P.M';
   newvariable!:string;
 
 
