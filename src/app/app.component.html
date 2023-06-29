@@ -1,9 +1,47 @@
 <div class="content">
-  <p>Opening Hours in Ballina: {{ myVariable }}</p>
+  <p>Today's tide times for BCS Park</p>
+  <table class="table">
+    <thead>
+      <th></th>
+        <th>Low Tide</th>
+        <th>High Tide</th>
+
+    </thead>
+
+    <tbody>
+
+      <tr>
+        <th>Morning</th>
+        <td scope="row">{{mltime}}</td>
+        <td>{{mhtime}}</td>
+
+      </tr>
+
+      <tr>
+        <th>Evening</th>
+        <td scope="row">{{eltime}}</td>
+        <td>{{ehtime}}</td>
+      </tr>
+
+    </tbody>
+  </table>
+
 
   <div class="input-field">
-    <label>Enter Time</label>
-    <input type="text" [(ngModel)]="newvariable" placeholder="Enter time 08:00 A.M."/>
+    <div>Morning</div>
+    <label>Enter Time for lowtide</label>
+    <input type="text" [(ngModel)]="mlnewtime" placeholder="Enter time 08:00 A.M."/>
+    <br>
+    <label>Enter Time for hightide</label>
+    <input type="text" [(ngModel)]="mhnewtime" placeholder="Enter time 08:00 A.M."/>
+    <br>
+    <div>Evening</div>
+    <label>Enter Time for lowtide</label>
+    <input type="text" [(ngModel)]="elnewtime" placeholder="Enter time 08:00 A.M."/>
+    <br>
+    <label>Enter Time for hightide</label>
+    <input type="text" [(ngModel)]="ehnewtime" placeholder="Enter time 08:00 A.M."/>
+
 
     <button (click)="updateVariable()">Update Variable</button>
   </div>
