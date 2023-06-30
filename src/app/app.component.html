@@ -1,3 +1,4 @@
+
 <div class="content">
   <p>Today's tide times for BCS Park</p>
   <table class="table">
@@ -10,27 +11,27 @@
     <tbody>
       <tr>
         <th>Morning</th>
-        <td scope="row">{{ mltime }}</td>
-        <td>{{ mhtime }}</td>
+        <td scope="row">{{ myVariable1 }}</td>
+        <td>{{ myVariable2 }}</td>
       </tr>
 
       <tr>
         <th>Evening</th>
-        <td scope="row">{{ eltime }}</td>
-        <td>{{ ehtime }}</td>
+        <td scope="row">{{ myVariable3 }}</td>
+        <td>{{ myVariable4 }}</td>
       </tr>
     </tbody>
   </table>
 
   <br>
 
-  <div class="input-field">
+  <div class="input-field" *ngIf="showForm">
     <div class="morning">
       <h3>Morning</h3>
       <label>Enter Time for lowtide</label>
       <input
         type="text"
-        [(ngModel)]="mlnewtime"
+        [(ngModel)]="myVariable1"
         placeholder="Enter time 08:00 A.M."
       />
       <br />
@@ -38,7 +39,7 @@
       <label>Enter Time for hightide</label>
       <input
         type="text"
-        [(ngModel)]="mhnewtime"
+        [(ngModel)]="myVariable2"
         placeholder="Enter time 08:00 A.M."
       />
       <br /><br>
@@ -49,7 +50,7 @@
       <label>Enter Time for lowtide</label>
       <input
         type="text"
-        [(ngModel)]="elnewtime"
+        [(ngModel)]="myVariable3"
         placeholder="Enter time 08:00 A.M."
       />
       <br />
@@ -57,13 +58,13 @@
       <label>Enter Time for hightide</label>
       <input
         type="text"
-        [(ngModel)]="ehnewtime"
+        [(ngModel)]="myVariable4"
         placeholder="Enter time 08:00 A.M."
       />
     </div>
   </div>
 
   <div class="btn">
-    <button (click)="updateVariable()">Update Variable</button>
-  </div>
+    <button (click)="toggleForm()" >{{ buttonText }}</button>
+
 </div>
