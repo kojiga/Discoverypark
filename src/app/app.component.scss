@@ -85,6 +85,19 @@ article:has(:hover, :focus) {
   color: #1c3044;
 }
 
+thead {
+  background-color: #4a81b5;
+  color: #fcfdfe;
+}
+
+tbody {
+  background-color: #fcfdfe;
+}
+
+tbody th {
+  color: #4a81b5;
+}
+
 .input-field {
   width: 100%;
   padding: 0 20%;
