@@ -1,8 +1,3 @@
-export interface Offers{
-  time:string
-
-
-
-
-
+export interface Offers {
+  time: string;
 }
