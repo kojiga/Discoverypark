@@ -284,7 +284,7 @@ AppComponent.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵ
   template: function AppComponent_Template(rf, ctx) {
     if (rf & 1) {
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0)(1, "div", 1)(2, "p");
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](3, "TIDE FORECAST - BCS PARK");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](3, "TIDE FORECAST - BALLINA PARK");
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "section", 2)(5, "article")(6, "div", 3)(7, "div", 4)(8, "h2");
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](9, "THE LIGHT-TOWERS");
@@ -305,7 +305,7 @@ AppComponent.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵ
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](25, " A delightful oasis where you and your four-legged companion can enjoy quality time together amidst nature's beauty. ");
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()()()()();
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](26, "div", 5)(27, "p");
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](28, "Today's Tide Times for BCS Park");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](28, "Today's Tide Times for Ballina Park");
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](29, "table", 6)(30, "thead");
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](31, "th");
@@ -346,7 +346,7 @@ AppComponent.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵ
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](16);
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("Get ", ctx.offerValue, "% Friday Offer");
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" Enjoy the Ultimate Adventure at BCS Park: Get ", ctx.offerValue, "% off on all Adventure Passes! Discover Tranquility in the Heart of Nature ");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" Enjoy the Ultimate Adventure at Ballina Park: Get ", ctx.offerValue, "% off on all Adventure Passes! Discover Tranquility in the Heart of Nature ");
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](23);
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](ctx.myVariable1);
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
