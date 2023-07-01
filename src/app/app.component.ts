@@ -3,6 +3,7 @@ import { Offers } from './Models/Offer';
 import { OfferserviceService } from './Services/offerservice.service';
 import { EmployeeService } from './Services/employee.service';
 import { Component, Inject, OnInit, PLATFORM_ID } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-root',
@@ -22,9 +23,11 @@ export class AppComponent implements OnInit {
   eltime!: string;
   ehtime!: string;
 
-  constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
+  constructor(@Inject(PLATFORM_ID) private platformId: Object, private titleService: Title) {}
 
   ngOnInit(): void {
+    this.titleService.setTitle('Tide Forecast');
+
     if (isPlatformBrowser(this.platformId)) {
       // Code that uses localStorage
       let storedValue1 = localStorage.getItem('mltime');
