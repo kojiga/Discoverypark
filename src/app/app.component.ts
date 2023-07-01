@@ -11,8 +11,9 @@ import { Title } from '@angular/platform-browser';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent implements OnInit {
-  buttonText: string = 'Update Time';
-  
+  buttonText: string = 'Update';
+
+  offerValue!: number;
   myVariable1!: string;
   myVariable2!: string;
   myVariable3!: string;
@@ -22,8 +23,12 @@ export class AppComponent implements OnInit {
   mhtime!: string;
   eltime!: string;
   ehtime!: string;
+  offer!: number;
 
-  constructor(@Inject(PLATFORM_ID) private platformId: Object, private titleService: Title) {}
+  constructor(
+    @Inject(PLATFORM_ID) private platformId: Object,
+    private titleService: Title
+  ) {}
 
   ngOnInit(): void {
     this.titleService.setTitle('Tide Forecast');
@@ -45,6 +50,9 @@ export class AppComponent implements OnInit {
       let storedValue4 = localStorage.getItem('ehtime');
       this.myVariable4 =
         storedValue4 !== null ? JSON.parse(storedValue4) : null;
+
+      let storedValue5 = localStorage.getItem('offer');
+      this.offerValue = storedValue5 !== null ? JSON.parse(storedValue5) : null;
     }
   }
 
@@ -59,14 +67,16 @@ export class AppComponent implements OnInit {
       this.myVariable3 !== undefined ? this.myVariable3 : this.eltime;
     this.ehtime =
       this.myVariable4 !== undefined ? this.myVariable4 : this.ehtime;
+    this.offer = this.offerValue !== undefined ? this.offerValue : this.offer;
 
     localStorage.setItem('mltime', JSON.stringify(this.mltime));
     localStorage.setItem('mhtime', JSON.stringify(this.mhtime));
     localStorage.setItem('eltime', JSON.stringify(this.eltime));
     localStorage.setItem('ehtime', JSON.stringify(this.ehtime));
+    localStorage.setItem('offer', JSON.stringify(this.offer));
 
     this.showForm = !this.showForm;
-    this.buttonText = this.showForm ? 'Update' : 'Update Time';
+    this.buttonText = this.showForm ? 'Update' : 'Update';
   }
 
   title = 'Reactiveform5';

@@ -20,9 +20,9 @@
     <article>
       <div class="article-wrapper">
         <div class="article-body">
-          <h2>Get 20% Friday Offer</h2>
+          <h2>Get {{offerValue}}% Friday Offer</h2>
           <p>
-            Enjoy the Ultimate Adventure at BCS Park: Get 20% off on all
+            Enjoy the Ultimate Adventure at BCS Park: Get {{offerValue}}% off on all
             Adventure Passes! Discover Tranquility in the Heart of Nature
           </p>
         </div>
@@ -105,6 +105,18 @@
         [(ngModel)]="myVariable4"
         placeholder="Enter time 08:00 A.M."
       />
+      <br /><br />
+    </div>
+
+    <div class="offer">
+      <h3>Offer</h3>
+      <label>Enter the Percentage of Offer</label>
+      <input
+        type="text"
+        [(ngModel)]="offerValue"
+        placeholder="Enter the percentage"
+      />
+      <br />
     </div>
   </div>
 
